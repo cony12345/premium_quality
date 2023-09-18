@@ -10,7 +10,7 @@ st.image("verde.png", use_column_width=True)
 option = st.selectbox('Selecciona tu opción',
     ("palta", "arbol", "rana", "manzana"))
 
-if option == "palta":
+if option == "rana":
     st.write ("Gracias por responder :)")
 else: 
     st.write("Gracias por responder :)")
