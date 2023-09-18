@@ -1,16 +1,20 @@
 import streamlit as st
-import random
-import cachipun 
-st.title("Bienvenido al Cachipun 😂 ")
-st.markdown("#### **Piedra Papel o Tijera**")
-st.write("Para jugar, por favor selecciona: piedra, papel o tijera.")
 
-options = ["Piedra", "Papel", "Tijera"]
-pc_opt = random.choice(options)
+
+st.title("Encuesta :) ")
+
+st.write("selecciona un objeto que tenga este color")
+st.image("verde.png", use_column_width=True)
+
 
 option = st.selectbox('Selecciona tu opción',
-    ('Piedra', 'Papel', 'Tijera'))
+    ("palta", "arbol", "rana", "manzana"))
 
-st.write('La computadora ha seleccionado:', pc_opt)
+if option == "palta":
+    st.write ("Gracias por responder :)")
+else: 
+    st.write("Gracias por responder :)")
+    
+    
 
-st.markdown(f"### {cachipun.result(pc_opt, option)}")
+
